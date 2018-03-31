@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="Add Item"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#212121"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/menuMargin1"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:background="#000000" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <EditText
+            android:id="@+id/editTextMenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="Enter Item Name"
+            android:maxLines="2"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayoutPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <EditText
+            android:id="@+id/editTextMenuPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="Enter Price"
+            android:maxLines="1"
+            android:inputType="number"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayoutPiece"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <EditText
+            android:id="@+id/editTextMenuPiece"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="Enter number of Pieces (Optional)"
+            android:maxLines="1"
+            android:inputType="number"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </android.support.design.widget.TextInputLayout>
+
+       <fr.ganfra.materialspinner.MaterialSpinner
+           android:id="@+id/spinnerCategory"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="8dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="13dp"
+           app:ms_arrowColor="@color/arrowColor"
+           app:ms_arrowSize="18dp"
+           app:ms_enableFloatingLabel="true"
+           app:ms_floatingLabelColor="@color/floatingLableColor"
+           app:ms_floatingLabelText="Category"
+           app:ms_hint="Category"
+           app:ms_hintColor="@color/hintColor"
+           app:ms_multiline="false" />
+
+      <fr.ganfra.materialspinner.MaterialSpinner
+          android:id="@+id/spinnerType"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="13dp"
+          app:ms_arrowColor="@color/arrowColor"
+          app:ms_arrowSize="18dp"
+          app:ms_enableFloatingLabel="true"
+          app:ms_floatingLabelColor="@color/floatingLableColor"
+          app:ms_floatingLabelText="Category"
+          app:ms_hint="Type"
+          app:ms_hintColor="@color/hintColor"
+          app:ms_multiline="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:paddingBottom="6dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonMenuCancel"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_dialog_button_cancel"
+            android:text="CANCEL"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonMenuAdd"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_dialog_button_save"
+            android:text="SAVE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

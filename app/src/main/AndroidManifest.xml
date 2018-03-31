@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pranshu.yummyrestaurant">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_logo"
+        android:label="YummyKart: Restaurant Interface"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".MyService" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContentActivity"
+            android:label="Orders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderHistoryActivity"
+            android:label="Order History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".PinActivity"
+            android:label="Delivery Areas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelplineActivity"
+            android:label="Helpline"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegisterActivity"/>
+    </application>
+
+</manifest>

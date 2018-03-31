@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/akshayhi"
+    android:id="@+id/loginRelative"
+    tools:context="com.example.pranshu.yummyrestaurant.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/style"
+        android:ems="10"
+        android:paddingStart="3dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+        android:hint="Enter Mobile No."
+        android:inputType="number"
+        android:maxLength="10"
+        android:textAlignment="textStart"
+        android:textColor="#FFEB3B"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/textLoginWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_alignEnd="@+id/editText1"
+        android:textColor="#F44336"
+        android:layout_marginTop="5dp"
+        android:text="Invalid number !" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/style1"
+        android:onClick="LoginMe"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+</RelativeLayout>

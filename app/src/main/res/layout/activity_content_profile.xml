@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarlayout">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/my_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/buttonPic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textProfileRestName"
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="8dp"
+                    android:text="Edit Profile : "
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#212121"
+                    android:textColorHint="#01579B"
+                    android:textSize="22dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/input_res_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Restaurant  Name"
+                        android:maxLines="1"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:textColorHint="#004D40" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="16.5dp"
+                    android:paddingStart="8dp"
+                    android:text="Mobile No."
+                    android:textColor="#004D40"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/input_res_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:hint="Mobile No."
+                    android:maxLines="1"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="14dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:background="#004D40" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="30dp">
+
+                    <EditText
+                        android:id="@+id/input_res_min_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Minimum Order (₹)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:textColorHint="#004D40" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_open_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_open_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/input_res_open_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Open Time (xx:xx:xx)"
+                            android:inputType="time"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:paddingStart="8dp"
+                            android:textColorHint="#004D40" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_close_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/input_res_close_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Close Time (xx:xx:xx)"
+                            android:inputType="time"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:textColorHint="#004D40" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"
+                    android:text="Note: Time is in 24 hour format.\n           For 24 x 7 open fill 00:00:00 in both open and close time field."
+                    android:textColor="#F44336"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp">
+
+                        <EditText
+                            android:id="@+id/input_res_discount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Discount (%)"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:maxLines="1"
+                            android:paddingStart="8dp"
+                            android:textColorHint="#004D40" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_tax"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="15dp">
+
+                        <EditText
+                            android:id="@+id/input_res_tax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="GST (CGST+SGST)(%)"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:maxLines="1"
+                            android:textColorHint="#004D40" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:onClick="CancelButton"
+                        android:text="Cancel"
+                        android:textColor="#727272"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FAFAFA"
+                        android:onClick="SaveProfile"
+                        android:text="Save"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

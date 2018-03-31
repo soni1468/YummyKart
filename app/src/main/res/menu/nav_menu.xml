@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menu_areas"
+            android:icon="@drawable/ic_areas"
+            android:title="Delivery Pins" />
+        <item
+            android:id="@+id/menu_ordermenu"
+            android:icon="@drawable/ic_menu"
+            android:title="Menu" />
+        <item
+            android:id="@+id/menu_history"
+            android:icon="@drawable/ic_order_history"
+            android:title="Order History" />
+
+
+    </group>
+    <item android:title="Others">
+        <menu>
+            <item android:id="@+id/menu_helpline"
+                android:title="Heapline"/>
+
+        </menu>
+
+    </item>
+
+</menu>

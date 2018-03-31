@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter Pin "
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#004D40"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:background="#00897B" />
+
+    <EditText
+        android:id="@+id/customEditTextDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_dialog_edittext"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_areas_dialog"
+        android:hint="Enter Pin"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="16dp"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginTop="10dp"
+        android:background="#424242" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/customDialogCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_dialog_button_cancel"
+            android:elevation="4dp"
+            android:padding="6dp"
+            android:text="Cancel"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/customDialogSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_dialog_button_save"
+            android:elevation="4dp"
+            android:padding="6dp"
+            android:text="Save"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

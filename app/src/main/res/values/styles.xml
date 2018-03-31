@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- FOR SETTING THE COLOR OF ELEMENTS IN TOOLBAR i.e TEXT AND THREE DOT -->
+    <style name="myCustomToolbar" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">#FFF</item>
+        <item name="android:textColorSecondary">#FFF</item>
+    </style>
+    
+
+</resources>

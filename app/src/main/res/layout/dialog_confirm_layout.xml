@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/deleteIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_cancel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/deleteIcon"
+            android:paddingStart="10dp"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            android:paddingEnd="0dp"
+            android:text="Confirm Cancel"
+            android:textColor="#000000"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="6dp"
+        android:background="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingStart="10dp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="6dp"
+        android:textColor="#212121"
+        android:text="Do you really want to cancel?"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butConfirmNO"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_dialog_button_cancel"
+            android:text="NO"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/butConfirmYES"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/style_dialog_button_save"
+            android:text="YES"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

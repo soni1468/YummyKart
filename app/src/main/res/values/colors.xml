@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CB202D</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#455A64</color>
+    <color name="arrowColor">#004D40</color>
+    <color name="hintColor">#37474F</color>
+    <color name="floatingLableColor">#00695C</color>
+</resources>

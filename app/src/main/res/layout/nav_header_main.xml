@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#B71C1C"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingEnd="0dp"
+    android:paddingStart="14dp"
+    android:paddingTop="6dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!--<TextView
+           android:id="@+id/textViewR"
+           android:layout_width="76dp"
+           android:layout_height="76dp"
+           android:layout_marginLeft="-2dp"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/round_but_style2" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="32dp"
+        android:foreground="@drawable/logo_logo" />
+
+
+    <TextView
+        android:id="@+id/textYummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:paddingEnd="0dp"
+        android:paddingStart="8dp"
+        android:text="YummyKart"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/textYummy"
+        android:text="Restaurant" />
+
+    <TextView
+        android:id="@+id/nav_text_rest_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:text="the burger"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nav_text_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_text_rest_name"
+        android:paddingTop="4dp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

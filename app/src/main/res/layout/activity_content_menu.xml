@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuCoordinate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.pranshu.yummyrestaurant.PinActivity">
+
+    <include layout="@layout/activity_menu" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabbuttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="#0C8B46"
+        android:elevation="6dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:borderWidth="0dp"
+        app:rippleColor="#E0E0E0" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style6"
+    tools:context="com.example.pranshu.yummyrestaurant.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/yummyImage1"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/logo_logo" />
+
+    <ImageView
+        android:id="@+id/yummyImage2"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/yummyImage1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/title" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yummyImage2"
+        android:padding="16dp"
+        android:text="Not registered yet ?"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#F44336"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textRegister"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:background="#212121" />
+
+    <TextView
+        android:id="@+id/textRegister2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:padding="10dp"
+        android:text="Get yourself registered today!"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#006064"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/reachout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textRegister2"
+        android:layout_marginTop="30dp"
+        android:padding="4dp"
+        android:text="Reach out to us on :"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reachout"
+        android:paddingTop="20dp"
+        android:text="yummykartindia@gmail.com"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#212121" />
+
+    <TextView
+        android:id="@+id/contactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_marginTop="40dp"
+        android:text="Contact us directly :"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7504428223\n7064007719"
+        android:layout_below="@+id/contactUs"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:textColor="#212121"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/buttonRegisterOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/style7"
+        android:onClick="Ok"
+        android:text="OK"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#004D40"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

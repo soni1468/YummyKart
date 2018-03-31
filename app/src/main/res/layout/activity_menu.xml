@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pranshu.yummyrestaurant.MenuActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:id="@+id/linearMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.94"
+            android:paddingStart="35dp"
+            android:paddingEnd="0dp"
+            android:text="ITEM"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#212121"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="20dp"
+            android:background="#000000"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#212121"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="20dp"
+            android:background="#000000"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="TYPE"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#212121"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar_color_vertical"
+        android:layout_below="@+id/linearMenu">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

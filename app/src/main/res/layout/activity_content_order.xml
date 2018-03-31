@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_Content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pranshu.yummyrestaurant.ContentActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:id="@+id/ivNoOrders"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/emptycart"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textNoOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNoOrders"
+        android:layout_marginTop="2dp"
+        android:text="   No Orders !!"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#E57373"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar_color_vertical"
+        android:scrollbarSize="10dp"/>
+
+
+</RelativeLayout>

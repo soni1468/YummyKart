@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textOrderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:textStyle="bold"
+                android:paddingTop="6dp"
+                android:text="Order No. : 12345678"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textOrderNo"
+                android:paddingEnd="0dp"
+                android:paddingStart="40dp"
+                android:paddingTop="6dp"
+                android:textStyle="bold"
+                android:text="12:25 PM     13-07-2017" />
+
+            <TextView
+                android:id="@+id/textCardMenu"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="0dp"
+                android:text="&#8942;"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/textMargin1"
+                android:layout_width="match_parent"
+                android:layout_height="0.001dp"
+                android:layout_below="@+id/textOrderNo"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#000FFF" />
+
+            <TextView
+                android:id="@+id/textCustDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMargin1"
+                android:layout_marginTop="4dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:text="Pranshu Soni\nMusallahpur, Nahar Par\nPost-Mahendru Patna-13\nLandmark : HP Gas Agency\n7504428223"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#212121" />
+
+            <View
+                android:id="@+id/textMargin2"
+                android:layout_width="match_parent"
+                android:layout_height="0.001dp"
+                android:layout_below="@+id/textCustDetails"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#000FFF" />
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMargin2"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/textItemOnly"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="36dp"
+                    android:text="Item"
+                    android:textAlignment="textStart"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#212121"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textQuantityOnly"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textItem"
+                    android:text="Qty"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#212121"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textAmountOnly"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textQuantityOnly"
+                    android:text="Amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#212121"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textItem"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textItemOnly"
+                    android:layout_marginTop="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="16dp"
+                    android:text="Chicken Butter Masala\nPaneer Butter Masala"
+                    android:textAlignment="textStart"
+                    android:textColor="#212121"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textQuantity"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textItemOnly"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/textItem"
+                    android:text="3\n2"
+                    android:textAlignment="center"
+                    android:textColor="#212121"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textAmount"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textItemOnly"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@id/textQuantity"
+                    android:text="₹ 600\n₹ 300"
+                    android:textAlignment="center"
+                    android:textColor="#212121"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/textMargin3"
+                android:layout_width="match_parent"
+                android:layout_height="0.001dip"
+                android:layout_below="@+id/relative2"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:background="#000FFF" />
+
+            <TextView
+                android:id="@+id/textTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textMargin3"
+                android:layout_marginTop="4dp"
+                android:paddingEnd="33dp"
+                android:paddingStart="0dp"
+                android:textStyle="bold"
+                android:text="Total Amount :     ₹ 900"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <View
+                android:id="@+id/textMargin4"
+                android:layout_width="match_parent"
+                android:layout_height="0.001dip"
+                android:layout_below="@+id/textTotalAmount"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#000FFF" />
+
+            <LinearLayout
+                android:id="@+id/buttonLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMargin4"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/buttonConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style3"
+                    android:text="CONFIRM"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonOFD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style3"
+                    android:text="OFD"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonDelivered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/style3"
+                    android:text="DELIVERED"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/textMargin5"
+                android:layout_width="match_parent"
+                android:layout_height="0.001dip"
+                android:layout_below="@+id/buttonLinear"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#000FFF" />
+
+            <TextView
+                android:id="@+id/textDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textMargin5"
+                android:layout_marginTop="4dp"
+                android:text="Discount : 12%"
+                android:textColor="#00695C"
+                android:textStyle="bold"
+                android:paddingBottom="2dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
